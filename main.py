@@ -69,6 +69,7 @@ def main():
             new_status = input("Nhập trạng thái mới (hoặc bỏ qua): ")
             while new_status not in [Order.STATUS_PENDING, Order.STATUS_DELIVERING, Order.STATUS_DELIVERED, ""]:
                 new_status = input("Trạng thái không hợp lệ. Nhập lại: ")
+
             edit_products = []
             edit_choice = input("Có muốn sửa thông tin sản phẩm không? (y/n): ")
             if edit_choice.lower() == "y":
